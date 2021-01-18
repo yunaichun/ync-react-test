@@ -1,0 +1,12 @@
+const Koa = require('koa');
+const path = require('path');
+const static = require('koa-static');
+
+const app = new Koa();
+
+// == 可通过地址访问: http://localhost:6000/index.html
+app.use(static(path.join(__dirname,  './build')));
+
+app.listen(6001, () => {
+  console.log('server started on port 6001');
+});
