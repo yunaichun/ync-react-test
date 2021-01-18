@@ -17,7 +17,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy:stag": "NODE_ENV=staging pm2 deploy ecosystem.config.js staging",
+    "deploy:prod": "NODE_ENV=production  pm2 deploy ecosystem.config.js production"
   },
   "eslintConfig": {
     "extends": [
