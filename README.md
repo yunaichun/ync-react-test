@@ -11,6 +11,9 @@ npm run start
 # 编译项目
 npm run build
 
-# pm2 自动发布项目
-npm run publish
+# pm2 测试环境发布
+$ npm run deploy:stag
+
+# pm2 正式环境发布
+$ npm run deploy:prod
 ```
