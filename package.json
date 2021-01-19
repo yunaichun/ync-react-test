@@ -16,7 +16,8 @@
     "web-vitals": "^0.2.4",
     "ync-react-animation-keyframe": "^0.0.2",
     "ync-react-browserrouter-server": "^0.0.4",
-    "ync-react-expose": "^0.0.3"
+    "ync-react-expose": "^0.0.3",
+    "ync-react-modal": "^0.0.6"
   },
   "scripts": {
     "start": "react-scripts start",

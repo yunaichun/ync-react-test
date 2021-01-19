@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Animation from '../components/animation-js';
 import Three from '../components/animation-three';
 import Expose from '../components/react-expose';
+import Modal from '../components/react-modal';
 
 export default () => {
   return (
@@ -12,6 +13,7 @@ export default () => {
         <Route exact path="/react/animation" render={() => <Animation />} />
         <Route exact path="/react/three" render={() => <Three />} />
         <Route exact path="/react/expose" render={() => <Expose />} />
+        <Route exact path="/react/modal" render={() => <Modal />} />
       </Switch>
     </BrowserRouter>
   );
