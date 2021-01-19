@@ -1,12 +1,7 @@
-const Koa = require('koa');
-const path = require('path');
-const static = require('koa-static');
+const koa = require('ync-react-browserrouter-server');
 
-const app = new Koa();
+const app = new koa();
 
-// == 可通过地址访问: http://localhost:6000/index.html
-app.use(static(path.join(__dirname,  './build')));
+const port = process.env.PORT || 6001;
 
-app.listen(6001, () => {
-  console.log('server started on port 6001');
-});
+app.start(port);
